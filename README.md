@@ -5,4 +5,4 @@ Fast University flex response time displayed on a chart.
 Well it was really late at night and I found this [go-charts](https://github.com/go-echarts/go-echarts) repository. So I implemented using the data of respoce time of my university portal.
 
 # Response Time:
-![My Remote Image](relative%20https://github.com/Rehmanareeb/Flex-Respone-Chart/blob/main/Request_Response.png?raw=true "Title")
+![Response Time](https://github.com/Rehmanareeb/Flex-Respone-Chart/blob/main/Request_Response.png?raw=true "Title")
