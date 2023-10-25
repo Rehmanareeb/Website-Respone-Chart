@@ -1,4 +1,4 @@
-# Flex-Respone-Chart
+# Website-Respone-Chart
 Any website that end with '.com' response time displayed on a chart.
 
 # Why?
