@@ -7,7 +7,7 @@ import (
 	"github.com/go-echarts/go-echarts/v2/opts"
 )
 
-func Fetching_Data_Using_The_Time(time_taken []int64) []opts.BarData {
+func Fetching_Data_Using_The_Time(time_taken []float64) []opts.BarData {
 
 	var data []opts.BarData
 
@@ -19,12 +19,12 @@ func Fetching_Data_Using_The_Time(time_taken []int64) []opts.BarData {
 	return data
 }
 
-func Generate_Bar_Chart(w http.ResponseWriter, _ *http.Request, time_taken []int64) {
+func Generate_Bar_Chart(w http.ResponseWriter, _ *http.Request, time_taken []float64) {
 
 	bar := charts.NewBar()
 	bar.SetGlobalOptions(charts.WithTitleOpts(opts.Title{
 		Title:    "Time Taken By The Request To Respond",
-		Subtitle: "In Milliseconds",
+		Subtitle: "In Seconds",
 	}))
 
 	bar.SetXAxis([]string{"1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"}).
